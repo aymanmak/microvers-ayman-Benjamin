@@ -1,0 +1,27 @@
+#body{
+    display: block;
+    background: rgb(91,90,153);
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+#title {
+    padding-top: 20px;
+}
+.container {
+    display:block;
+    margin: auto;
+    width : 700px;
+    background-color: rgb(40,40,71);
+    text-align: left;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 50px;
+}
+.form{
+    display: block;
+    
+}
+.labels{
+    display: inline;
+}
