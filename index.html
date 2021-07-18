@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
+  <body id="body">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
@@ -24,37 +24,63 @@
     <script  src="js/index.js"></script>
     <h1 id="title">freeCodeCamp Survey Form </h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form  id="survey-form">
+    <div class="container">
+      <form  id="survey-form">
         
         
-       <label id="name-label">
+       <label id="name-label" class="form">
          Name
        </label>
-        <input  type="text" id="name" placeholder="Enter your name" required><br>
-        <label id="email-label">
+        <input  type="text" class="form" id="name" placeholder="Enter your name" required><br>
+        <label id="email-label" class="form">
           Email
         </label>
-         <input type= "email" id="email" placeholder="Enter email" required>
-         <label id="number-label">
-          Age
+         <input type= "email" id="email" class="form" placeholder="Enter email" required><br>
+         <label id="number-label" class="form">
+          Age (Optional)
         </label>
-        <input placeholder = "Age" type="number" id="number" min=2 max =58>
-        <select id="dropdown">
+        <input placeholder = "Age" type="number" class="form" id="number" min=2 max =58><br>
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" class="form">
           <option>
             Student
           </option>
           <option>
-            Full time job
+            Full Time Job
+          </option>
+          <option>
+            Full Time Learner
+          </option>
+          <option>Prefer Not To Say
+          </option>
+          <option>Other
           </option>
         </select>
-        <input type="radio" name="juy" value="Definitely">
-       <input type="radio" name="juy" value="Maybe">
+        <br>
+        <p>Would you recommend freeCodeCamp to a friend?</p> 
+          <input type="radio" name="juy" class="form" value="Definitely" ><label class="labels"> Definitely</label>
+       <input type="radio" name="juy" value="Maybe" class="form">
+       <input type="radio" name="juy"  class="form" value="Not Sure"> <br>
+       <p>What is your favorite feature of freeCodeCamp?</p>
+       <select id="dropdown1" class="form">
+        <option>
+          Challenges
+        </option>
+        <option>Projects
+        </option>
+        <option>Community
+        </option>
+        <option>Open Source
+        </option>
+        </select>
+      <br>
+       <p>What would you like to see improved? (Check all that apply)</p>
+       <input type="checkbox" class="form" name = "lkj" value="Front-end-projects">
+       <input type="checkbox" class="form" name = "lkj" value="back-end-projects">
 
-       <input type="checkbox" name = "lkj" value="Front-end-projects">
-       <input type="checkbox" name = "lkj" value="back-end-projects">
-
-       <textarea rows="10" cols="48"></textarea>
-       <button type="submit" id="submit" ></button>
+       <textarea rows="10" cols="48" class="form"></textarea>
+       <button type="submit" id="submit" class="form"></button>
     </form>
+  </div>
   </body>
 </html>
